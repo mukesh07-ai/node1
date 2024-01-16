@@ -31,5 +31,41 @@
             </div>
         </div>
     </div>
+    <form id="reg">
+        Name : <input type="text" id="name"><br><br>
+        E-mail : <input type="mail" id="mail"><br><br>
+        Location : 
+        <select id="nsti">
+            <option value="Patna">Patna</option>
+            <option value="Prayagraj">Allahabad</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Kanpur">Kanpur</option>
+        </select>
+        <br><br>
+        <input type="submit" id="submit">
+    </form>
+
+
+    <script>
+        $(document).ready(function(){
+                $("input, select").focus(function(){
+                $(this).css("background","yellow")
+                })
+               $("input,select").blur(function(){
+               $(this).css("background","")
+               })
+               $("input").select(function(){
+                $(this).css("background","blue")
+               })
+               $("select").change(function(){
+                a = $(this).val()
+                $("#reg").html(a)
+              })
+              $("#reg").submit(function(){
+                alert("thank you")
+              })
+            })
+
+    </script>
 </body>
 </html>
