@@ -18,7 +18,8 @@
 
 //Append merhord
 fs = require('node:fs')
-fs.writeFile('./k.txt', ' uyfvtftatna', {flag: "a"}, (error) =>{
+fs.writeFile('./k.txt', 'hellow welcome to NSTI Patna.', {flag: "a"}, (error) =>{
         if(error){console.log(error)}
         else{console.log('print')}
     })
+
